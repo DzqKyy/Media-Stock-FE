@@ -1,0 +1,221 @@
+.header-shop{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Sesuaikan dengan kebutuhan Anda */
+    background-color: white; /* Atur latar belakang agar tetap terlihat */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opsional: tambahkan bayangan untuk efek pemisahan */
+    margin-top: 70px;
+    border-top: 1px solid #D9D9D9; 
+    border-bottom: 1px solid #D9D9D9; 
+}
+
+.filter{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    display: inline-flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    justify-content: center;
+    color: #012970;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 25px;
+    border: 1px solid #012970;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+
+.filter p{
+    margin: 0; /* Menghilangkan margin bawaan pada elemen p */
+    margin-left: 5px;
+}
+
+.search{
+    margin-top: 2px;
+    margin-left: 20px;
+    width: 70%;
+    margin-bottom: 2px;
+    display: inline-flex;
+    padding: 5px;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #F5F5F5;
+    border: 2px solid #012970;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+
+input{
+    background-color: #F5F5F5;
+    width: 90%;
+    border: none;
+    outline: none;
+    color: #012970;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+input::placeholder {
+    color: #012970; /* Warna placeholder */
+    opacity: 1; 
+}
+
+.dropdown{
+    border: 1px solid #012970;
+}
+
+
+/* Konten sidebar layout */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    margin-top: 70px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar-header {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: #012970;
+    /* background-color: yellowgreen; */
+}
+
+.filt{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.sidebar-body {
+    color: #012970;
+    margin-left: 30px;
+    margin-right: 50px;
+    font-weight: 500;
+    /* border: 2px solid #012970; */
+
+    /* background-color: yellowgreen; */
+}
+
+.all-asset,
+.image-asset,
+.video-asset,
+.audio-asset{
+        border: 1px solid #012970;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+}
+
+.all-asset:hover,
+.image-asset:hover,
+.video-asset:hover,
+.audio-asset:hover {
+    border-width: 1px; /* Mengubah lebar border saat hover */
+    background-color: #012970; /* Mengubah warna latar belakang saat hover */
+    color: #ffffff;
+}
+
+
+/* Konten halaman shop */
+.close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.content {
+    transition: margin-left 0.3s ease;
+}
+
+.content-with-sidebar {
+    margin-left: 50px; /* Width of the sidebar */
+}
+
+.header-shop {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .filter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nama-filter {
+    margin-left: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+.main-shop{
+    margin-top: 120px;
+    padding: 20px;
+}
+
+.rounded-img {
+    border-radius: 10px; /* Untuk gambar bulat sempurna */
+    /* Atau gunakan border-radius: 15px; untuk sudut melingkar */
+}
+
+.title-asset{
+    color: #012970;
+    font-weight: 900;
+    margin: 0 0 -2px 0;
+}
+
+.author-asset{
+    color: black;
+    transition: font-size 0.3s ease;
+}
+
+.heart{
+    margin-right: 5px;
+}
+.heart-icon{
+    margin-top: 2px;
+}
+.star{
+    margin-left: 6px;
+}
+.star-icon{
+    margin-top: 1px;
+}
+.total-like, .total-star{
+    color: black;
+    margin-left: 2px;
+}
+
+/* sidebar konten halaman shop */
+.main-shop {
+    transition: margin-left 0.3s ease;
+}
+
+.main-shop.with-sidebar {
+    margin-left: 250px; /* Same width as the sidebar */
+}
+
