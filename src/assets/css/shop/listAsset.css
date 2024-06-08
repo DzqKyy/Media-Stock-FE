@@ -1,0 +1,35 @@
+.gambar a {
+    display: block;
+    position: relative;
+}
+
+.asset-image {
+    transition: filter 0.3s ease;
+}
+
+.asset-image:hover {
+    filter: opacity(0.85);
+}
+
+.love-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 0, 0); /* Optional: adds a background to make the icon stand out */
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    filter: opacity(0.6);
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+.love-icon:hover{
+    filter: opacity(1);
+}
+
+.gambar:hover .love-icon {
+    opacity: 1; /* Show icon on hover */
+}

@@ -1,6 +1,5 @@
-import { createSignal } from 'solid-js';
 
-const Contact = () => {
+const ContactAdmin = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         // Proses formulir di sini
@@ -65,4 +64,4 @@ const ContactTextarea = (props) => (
     </div>
 );
 
-export default Contact;
+export default ContactAdmin;

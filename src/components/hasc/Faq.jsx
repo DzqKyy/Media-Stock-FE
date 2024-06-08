@@ -1,8 +1,9 @@
 import { createSignal } from 'solid-js';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Faq = () => {
     return (
-        <section id="faq" class="faq">
+        <section id="faq" class="faq mb-5">
             <div class="container">
                 <header class="section-header">
                     <p>Pertanyaan</p>
@@ -61,7 +62,7 @@ const FaqList = (props) => {
         <div class="col-lg-6">
             <div class="accordion accordion-flush" id={id}>
                 {questions.map((item) => (
-                    <div class="accordion-item">
+                    <div class="accordion-item" key={item.id}>
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#${item.id}`}>
                                 {item.question}

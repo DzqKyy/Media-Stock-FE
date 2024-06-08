@@ -1,18 +1,19 @@
+import { createSignal } from "solid-js";
+import About1 from "../components/hasc/About1";
+import About2 from "../components/hasc/About2";
 import Header from "../components/hasc/Header";
-import Section from "../components/hasc/Section";
 import Footer from "../components/hasc/Footer";
-import Main from "../components/hasc/Main";
 import '../assets/css/hasc/style.css';
 
-function Home() {
-
+function About() {
     return (
         <>
             <Header />
-            <Section />
-            <Main />
+            <About1 />
+            <About2 />
             <Footer />
         </>
     );
 }
-export default Home;
+
+export default About;

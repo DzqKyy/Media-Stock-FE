@@ -23,17 +23,32 @@
     margin-left: 40px;
 }
 
-.question{
-    margin-left: 190px;
+.header-auth {
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.img-fluid {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.question {
+    text-align: right; 
 }
 
 .tittle-question{
+    font-size: small;
+    margin-top: 10px;
     margin-bottom: 0;
     color: #ACA6A6;
+    font-weight: 600;
 }
 
 .link-question{
-    font-weight: 500;
+    font-weight: 600;
+    font-size: small;
 }
 
 .link-backtohome{
@@ -44,7 +59,7 @@
 }
 
 .start{
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: 600;
     color: black;
     font-family: 'Teko', sans-serif;
@@ -77,19 +92,6 @@
     margin-bottom: 30px;
 }
 
-.input-auth{
-    width: 380px;
-    background-color: #ffffff;
-    color: #000000;
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 20px 0px 20px 15px;
-    height: 30px;
-    border: 2px solid #DFDFDF;
-    border-radius: 5px;
-}
-
 .input-auth::placeholder {
     color: #ACA6A6; /* Warna placeholder yang diinginkan */
     opacity: 1; /* Atur opacity jika perlu */
@@ -101,37 +103,53 @@
     border-color: rgb(0, 0, 0); 
 }
 
-.button-auth {
-    /* font-family: 'Nunito's, sans-serif; */
-    margin-top: 40px;
+
+.input-auth, .button-auth {
+    width: 100%; /* Set lebar 100% dari elemen induknya */
+    padding: 10px; /* Padding dalam elemen */
+    margin: 5px 0; /* Margin atas dan bawah */
+    box-sizing: border-box; /* Sertakan padding dan border dalam lebar dan tinggi elemen */
+    border-radius: 5px; /* Sudut yang melengkung */
+    border: 1px solid #ccc; /* Border abu-abu */
+}
+
+.input-auth {
+    color: #000000;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 0px 20px 15px;
+    height: 30px;
+    border: 2px solid #DFDFDF;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #f9f9f9; /* Warna background input */
+}
+
+.button-auth{
     background-color: #4154F1; 
     color: #ffffff;
-    padding: 10px 20px; 
-    width: 380px;
-    font-size: large;
-    font-weight: 700;
     border-radius: 8px;
     cursor: pointer; 
     text-align: center; 
 }
 
-.button-login:hover {
-    background-color: #0056b3; /* Warna latar belakang saat dihover */
+
+.button-auth:hover {
+    background-color: #0056b3; /* Warna background tombol saat hover */
 }
 
-
 .right-side{
-    margin-top: 7px;
     padding: 20px;
 }
 
 .avatar{
     position: absolute;
-    background-color: #ffffff;
+    width: 66%;
+}
+    
+.img-harits{
+    border-radius: 50%;
     border: 7px solid #ffffff; 
-    border-radius: 50px;
-    top: 80px;
-    left: 710px; 
-    z-index: 2; 
 }
 

@@ -1,6 +1,6 @@
 import { createSignal } from "solid-js";
 
-function About() {
+function Main() {
     return (
         <div>
             <section id="about" class="about">
@@ -37,4 +37,4 @@ function About() {
     );
 }
 
-export default About;
+export default Main;

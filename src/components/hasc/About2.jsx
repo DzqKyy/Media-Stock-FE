@@ -1,6 +1,6 @@
 import { createSignal } from 'solid-js';
 
-const Asset = () => {
+const About2 = () => {
   return (
     <section id="values" class="values">
       <div class="container">
@@ -46,4 +46,4 @@ const AssetBox = (props) => {
   );
 };
 
-export default Asset;
+export default About2;

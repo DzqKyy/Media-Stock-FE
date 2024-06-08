@@ -23,19 +23,19 @@ const Footer = () => {
 };
 
 const FooterInfoBox = () => (
-    <div class="col-lg-7 col-md-12 footer-info">
+    <div class="col-lg-8 col-md-12 footer-info">
         <a href="index.html" class="logo d-flex align-items-center">
             <img src="../src/assets/img/logo.png" alt="" />
             <span>Media Stock</span>
         </a>
-        <div class="col-lg-9">
+        <div class="col-lg-8">
         <p>Media Stock adalah platform terpercaya untuk menjual dan membeli hak cipta aset. Kami menyediakan untuk memonetisasi karya-karya mereka dan bagi para pembeli untuk menemukan konten berkualitas yang mereka butuhkan.</p>
         </div>
     </div>
 );
 
 const FooterLinks = (props) => (
-    <div class="col-lg-2 col-6 footer-links">
+    <div class="col-lg-2 col-5 footer-links">
         <h4>{props.title}</h4>
         <ul>
             {props.links.map((link, index) => (
@@ -46,8 +46,8 @@ const FooterLinks = (props) => (
 );
 
 const FooterContact = () => (
-    <div class="col-lg-3 col-6 footer-contact text-center text-md-start">
-        <h4>CONTACT US</h4>
+    <div class="col-lg-2 col-7 footer-contact">
+        <h4 class="mb-0">CONTACT US</h4>
         <p>
             Jalan Ir. Sutami 36 Kentingan,  <br />
             Jebres, Surakarta, <br />
@@ -59,11 +59,10 @@ const FooterContact = () => (
 );
 
 const usefulLinks = [
-    { title: "Home", url: "#" },
-    { title: "About", url: "#about" },
-    { title: "Asset", url: "#values" },
-    { title: "Services", url: "#services" },
-    { title: "FAQ", url: "#faq" },
+    { title: "Home", url: "/" },
+    { title: "About", url: "/about" },
+    { title: "Services", url: "/services" },
+    { title: "Contact", url: "/contact" },
 ];
 
 

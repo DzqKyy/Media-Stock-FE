@@ -64,7 +64,7 @@ const ServiceBox = (props) => {
             <i class={iconClass}></i>
             <h3>{title}</h3>
             <p>{description}</p>
-            <a href="portfolio.html" class="read-more">
+            <a href="/shop" class="read-more">
                 <span>Read More</span> <i class="bi bi-arrow-right"></i>
             </a>
         </div>

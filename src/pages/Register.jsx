@@ -1,4 +1,5 @@
 import { createSignal } from "solid-js";
+import '../assets/css/auth/authentication.css';
 
 function Register() {
     // State untuk menyimpan nilai input dari form
@@ -41,18 +42,18 @@ function Register() {
     return (
         <div>
             <div class="wrapper-auth">
-                <div class="avatar">
-                    <img src="../src/assets/img/avatar-auth.png" class="img-fluid" alt="da" />
-                </div>
                 <div class="container auth">
                     <div class="row">
+                        <div class="avatar text-center mt-3 ">
+                            <img src="../src/assets/img/avatar-auth.png" class="img-harits " alt="da" />
+                        </div>
                         <div class="col-6">
                             <div class="left-side">
-                                <div class="header d-flex">
+                                <div class="header-auth d-flex mx-3">
                                     <img src="../src/assets/img/hero-img.png" width="100px" class="img-fluid" alt="da" />
                                     <div class="question mt-3 text-center">
                                         <p class="tittle-question">Questions?</p>
-                                        <a class="link-question mt-0" href="https://wa.me/+6281229006357?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services" target="_blank">
+                                        <a class="link-question mt-0" href="/contact">
                                             Ask Mr. Harits
                                         </a>
                                     </div>
@@ -101,7 +102,7 @@ function Register() {
                                         onInput={handleConfirmPasswordChange}
                                     />
 
-                                    <div class="button-auth"  onClick={handleClick}>
+                                    <div class="button-auth mt-3" onClick={handleClick}>
                                         Register
                                     </div>
                                 </div>
@@ -110,9 +111,9 @@ function Register() {
                         </div>
 
                         <div class="col-6">
-                            <div className="right-side">
+                            <div className="right-side my-2">
                                 <div class="image">
-                                    <img src="../src/assets/img/auth.png" width="420px" class="img-fluid" alt="da" />
+                                    <img src="../src/assets/img/auth.png" width="auto" class="img-fluid" alt="da" />
                                 </div>
                             </div>
                         </div>

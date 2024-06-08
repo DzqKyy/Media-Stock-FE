@@ -1,14 +1,15 @@
 import { createSignal } from 'solid-js';
 
-const Feature = () => {
+
+const About1 = () => {
     return (
         <section id="features" class="features">
             <div class="container">
                 <header class="section-header">
                     <p>Mudahnya Mencari Berbagai Jenis Aset di Media Stock</p>
                 </header>
-                <div class="row">
-                    <div class="col-lg-6">
+                <div class="row px-4">
+                    <div class="col-lg-6 ">
                         <img src="../src/assets/img/features.png" class="img-fluid" alt="" />
                     </div>
                     <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
@@ -37,4 +38,4 @@ const FeatureBox = (props) => {
     );
 };
 
-export default Feature;
+export default About1;

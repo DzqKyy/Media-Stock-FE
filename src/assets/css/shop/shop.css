@@ -11,11 +11,10 @@
 }
 
 .filter{
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     display: inline-flex;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px 0 30px;
     align-items: center;
     justify-content: center;
     color: #012970;
@@ -32,17 +31,17 @@
 
 
 .filter p{
-    margin: 0; /* Menghilangkan margin bawaan pada elemen p */
+    margin: 0; 
     margin-left: 5px;
 }
 
 .search{
-    margin-top: 2px;
+    margin-top: 4px;
     margin-left: 20px;
     width: 70%;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     display: inline-flex;
-    padding: 5px;
+    padding: 4px 5px 4px 5px;
     align-items: center;
     border-radius: 25px;
     background-color: #F5F5F5;
@@ -60,7 +59,7 @@ input{
     border: none;
     outline: none;
     color: #012970;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
 }
@@ -70,8 +69,39 @@ input::placeholder {
     opacity: 1; 
 }
 
+/* dropdown */
 .dropdown{
     border: 1px solid #012970;
+    margin-top: 7px;
+}
+.dropdown-toggle:focus {
+    outline: none ;
+    box-shadow: none ;
+    border-color: transparent ;
+}
+
+.sort-by-text{
+    font-weight: 600;
+    font-size: 0.7rem;
+    margin-left: 1.2rem;
+    margin-top: -0.7rem;
+    background-color: #ffffff;
+    color: #012970;
+}
+
+.sort-by{
+    color: #012970;
+    font-weight: 600;
+}
+
+.dropdown-item {
+    color: #012970;
+    font-weight: 600;
+}
+
+.dropdown-item:hover {
+    color: #ffffff; 
+    background-color: #012970;
 }
 
 
@@ -100,8 +130,8 @@ input::placeholder {
     justify-content: space-between;
     align-items: center;
     color: #012970;
-    /* background-color: yellowgreen; */
 }
+
 
 .filt{
     font-size: 20px;
@@ -113,9 +143,6 @@ input::placeholder {
     margin-left: 30px;
     margin-right: 50px;
     font-weight: 500;
-    /* border: 2px solid #012970; */
-
-    /* background-color: yellowgreen; */
 }
 
 .all-asset,
@@ -140,6 +167,7 @@ input::placeholder {
 }
 
 
+
 /* Konten halaman shop */
 .close {
     background: none;
@@ -159,18 +187,18 @@ input::placeholder {
 .header-shop {
     padding-left: 10px;
     padding-right: 10px;
-  }
-  
-  .filter {
+}
+
+.filter {
     display: flex;
     align-items: center;
-  }
-  
-  .nama-filter {
+}
+
+.nama-filter {
     margin-left: 8px;
     font-size: 1rem;
     font-weight: bold;
-  }
+}
 
 .main-shop{
     margin-top: 120px;
