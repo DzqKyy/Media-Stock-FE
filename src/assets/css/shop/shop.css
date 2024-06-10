@@ -4,7 +4,7 @@
     width: 100%;
     z-index: 1000; /* Sesuaikan dengan kebutuhan Anda */
     background-color: white; /* Atur latar belakang agar tetap terlihat */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opsional: tambahkan bayangan untuk efek pemisahan */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 70px;
     border-top: 1px solid #D9D9D9; 
     border-bottom: 1px solid #D9D9D9; 
